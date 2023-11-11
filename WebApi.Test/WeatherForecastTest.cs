@@ -15,6 +15,7 @@ namespace WebApi.Test
 			Console.WriteLine(response);
 
 			Assert.NotEmpty(response);
+			Assert.Contains("temperatureC", response);
 		}
 	}
 }
